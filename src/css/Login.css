@@ -1,0 +1,57 @@
+/* Style for the login container */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #f7f7f7;
+}
+
+/* Style for the login box */
+.login-box {
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Take full width of the container */
+  max-width: 400px; /* Max width for smaller screens */
+  text-align: center;
+}
+
+/* Style for the input fields and button */
+.input-group {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+/* Make input fields full width and styled */
+input {
+  width: 100%; /* Full width */
+  padding: 12px 15px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  outline: none;
+}
+
+/* Style the button */
+.btn-submit {
+  width: 100%; /* Full width */
+  padding: 12px;
+  background-color: #00415a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.btn-submit:hover {
+  background-color: #006280;
+}
+
