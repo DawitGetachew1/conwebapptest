@@ -66,6 +66,16 @@ const WorkProcess = () => {
         ))}
       </div>
 
+      <div className="expectations-section">
+        <h2>What We Expect from You</h2>
+        <ul>
+          <li><strong>Timely Communication:</strong> Your feedback is crucial at each stage. Please respond promptly to ensure we stay on schedule.</li>
+          <li><strong>Clear Instructions:</strong> Provide detailed information and requirements upfront to help us meet your expectations.</li>
+        </ul>
+      </div>
+
+
+
       <div className="contact-float">
         <div className="phone-icon">
           <FaPhone />
