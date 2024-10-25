@@ -20,7 +20,7 @@ export const Navigation = (props) => {
           </button>
           {/* Updated: Changed anchor tag to align left */}
           <a className="navbar-brand page-scroll" href="#page-top">
-            Con
+          TiruSera
           </a>
         </div>
 
@@ -47,7 +47,7 @@ export const Navigation = (props) => {
             </li>
             <li>
               <a href="#portfolio" className="page-scroll">
-                Gallery
+                Projects
               </a>
             </li>
             <li>
@@ -65,6 +65,19 @@ export const Navigation = (props) => {
                 3D Modeling
               </a>
             </li>
+            <li>
+              <Link to="#" className="page-scroll">
+              HOW WE WORK
+              </Link>
+            </li>
+            <li>
+      {/* Other Links */}
+      <Link to="/packages">Packages</Link>
+      {/* Other Links */}
+    </li>
+
+
+
             {/* Move the login and signup buttons to the end */}
             <li>
               <Link to="/login" className="btn-mycustom">

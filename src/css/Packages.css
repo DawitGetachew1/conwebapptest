@@ -1,0 +1,86 @@
+/* src/css/Packages.css */
+
+.packages-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 150px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  .packages {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* One column for smaller screens */
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  @media (min-width: 768px) {
+    .packages {
+      grid-template-columns: repeat(3, 1fr); /* Three columns for larger screens */
+    }
+  }
+  
+  .package-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .package-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .package-card h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    background-color: #161d5e;
+    padding: 10px 10px;
+    border-radius: 10px;
+  }
+  
+  .package-card p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .package-card ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #666;
+  }
+  
+  .package-card ul li {
+    margin: 0.5rem 0;
+  }
+  
+  .pricing-details,
+  .order-info {
+    margin-top: 2rem;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .pricing-details h3,
+  .order-info h3 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+  }
+  
+  .pricing-details p,
+  .order-info p {
+    font-size: 1rem;
+    color: #555;
+  }
+  

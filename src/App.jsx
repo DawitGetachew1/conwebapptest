@@ -12,6 +12,7 @@ import { Contact } from "./components/contact";
 import Login from "./components/Login";  // New import for Login
 import Signup from "./components/Signup";  // New import for Signup
 import Caddrafting from "./components/Caddrafting";
+import Packages from "./components/Packages"; 
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
@@ -48,6 +49,8 @@ const App = () => {
               </>
             } 
           />
+           {/* Route for Packages page */}
+           <Route path="/packages" element={<Packages />} />
           
           {/* Route for Login page */}
           <Route path="/login" element={<Login />} />

@@ -86,12 +86,13 @@ hr {
   font-weight: 700;
   color: #333;
   text-transform: uppercase;
+  margin-left: -180px !important;
 }
 #menu.navbar-default .navbar-nav > li > a {
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
   color: #555;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 400;
   padding: 8px 2px;
   border-radius: 0;
@@ -237,7 +238,7 @@ a:focus,
   font-weight: 300;
   line-height: 30px;
   margin: 0 auto;
-  margin-bottom: 60px;
+  margin-bottom: 10px;
 }
 header .intro-text {
   padding-top: 350px;
@@ -334,7 +335,7 @@ header .intro-text {
   width: 120px;
   height: 120px;
   padding: 40px 0;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: #0a77a2;
   border-radius: 50%;
   color: #fff;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
@@ -462,6 +463,7 @@ header .intro-text {
   padding: 100px 0 60px;
   background: 	#00415a;
   color: rgba(255, 255, 255, 0.75);
+  
 }
 #contact .section-title {
   margin-bottom: 40px;
@@ -493,6 +495,7 @@ header .intro-text {
 }
 #contact form {
   padding-top: 20px;
+  
 }
 #contact .text-danger {
   color: #cc0033;
@@ -529,6 +532,7 @@ label {
   -webkit-transition: none;
   -o-transition: none;
   transition: none;
+  border-radius: 15px;
 }
 #contact .form-control:focus {
   border-color: #999;
