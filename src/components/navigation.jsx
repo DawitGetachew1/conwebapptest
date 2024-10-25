@@ -66,10 +66,11 @@ export const Navigation = (props) => {
               </a>
             </li>
             <li>
-              <Link to="#" className="page-scroll">
+              <Link to="/workprocess" className="page-scroll">
               HOW WE WORK
               </Link>
             </li>
+     
             <li>
       {/* Other Links */}
       <Link to="/packages">Packages</Link>

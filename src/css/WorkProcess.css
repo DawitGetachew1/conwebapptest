@@ -1,0 +1,170 @@
+.roadmap-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: linear-gradient(180deg, #4527A0 0%, #AA00FF 100%);
+    min-height: 100vh;
+    color: #fff;
+  }
+  
+  .title {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .title h1 {
+    margin-bottom: 10px;
+  }
+  
+  .timeline {
+    position: relative;
+    padding: 20px 0;
+  }
+  
+  .timeline::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .timeline-item {
+    position: relative;
+    margin-bottom: 60px;
+    width: 100%;
+    display: flex;
+  }
+  
+  .timeline-item.left {
+    justify-content: flex-start;
+  }
+  
+  .timeline-item.right {
+    justify-content: flex-end;
+  }
+  
+  .timeline-content {
+    width: 45%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .timeline-dot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20px;
+  }
+  
+  .timeline-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .timeline-description {
+    font-size: 0.9em;
+    line-height: 1.4;
+  }
+
+  /* Add to your existing CSS */
+
+  .contact-float {
+    position: fixed;
+    bottom: 30px;
+    /* Remove right: 30px and add left + transform to center horizontally */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 15px 25px;
+    border-radius: 50px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.contact-float:hover {
+    transform: translate(-50%, -5px); /* Modified to maintain horizontal centering while lifting */
+}
+  
+  .phone-icon {
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+  }
+  
+  .phone-icon svg {
+    color: #4527A0;
+    font-size: 20px;
+  }
+  
+  .phone-number a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+  }
+  
+  .phone-number a:hover {
+    text-decoration: underline;
+  }
+  
+ 
+
+
+  
+  @media (max-width: 768px) {
+    .timeline::before {
+      left: 30px;
+    }
+    
+    .timeline-item {
+      justify-content: flex-start !important;
+      padding-left: 60px;
+    }
+    
+    .timeline-content {
+      width: calc(100% - 60px);
+    }
+    
+    .timeline-dot {
+      left: 30px;
+    }
+
+    .contact-float {
+        bottom: 20px;
+        right: 20px;
+        padding: 12px 20px;
+      }
+    
+      .phone-icon {
+        width: 35px;
+        height: 35px;
+        margin-right: 12px;
+      }
+    
+      .phone-number a {
+        font-size: 1em;
+      }
+
+
+  }

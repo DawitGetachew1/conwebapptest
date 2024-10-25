@@ -53,14 +53,25 @@
   }
   
   .package-card ul {
-    list-style-type: disc;
-    padding-left: 20px;
-    color: #666;
+    list-style: none; /* Remove default bullet points */
+    padding-left: 0;
   }
   
   .package-card ul li {
+    position: relative;
+    padding-left: 20px; /* Space for the star icon */
     margin: 0.5rem 0;
   }
+  
+  .package-card ul li::before {
+    content: "★"; /* Unicode star character */
+    color: #FFD700; /* Gold color for the star */
+    font-size: 2rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
   
   .pricing-details,
   .order-info {
