@@ -50,7 +50,7 @@ const WorkProcess = () => {
   return (
     <div className="roadmap-container">
       <div className="title">
-        <h1>OUR ROADMAP</h1>
+        <h1>HOW WE WORK</h1>
         <p>Project Development Process</p>
       </div>
       
@@ -71,7 +71,7 @@ const WorkProcess = () => {
           <FaPhone />
         </div>
         <div className="phone-number">
-          <a href="tel:+1234567890">+ (251) 955 4578 </a>
+          <a href="tel:+1234567890">+ (251)  0978783334 </a>
         </div>
       </div>
     </div>
