@@ -1,26 +1,42 @@
 import React, { useState } from "react";
 import "../css/OrderPage.css"; // Import custom CSS for the page
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faTelegram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 const OrderPage = () => {
-  const [phoneRequestForm, setPhoneRequestForm] = useState({
-    name: "",
-    phone: "",
-  });
-
   const [orderForm, setOrderForm] = useState({
     name: "",
     phone: "",
     email: "",
     projectName: "",
     projectType: "Building",
-    services: [],
+    mainService: "", // Tracks the selected main service
+    services: [], // Selected specific services
     message: "",
     files: [""],
   });
 
-  const handlePhoneChange = (e) => {
-    const { name, value } = e.target;
-    setPhoneRequestForm({ ...phoneRequestForm, [name]: value });
+  const availableServices = {
+    "3D Modeling": [
+      "Building 3D modeling Services",
+      "Interior 3D modeling Services",
+      "Landscape 3D modeling Services",
+      "As built 3D modeling Services",
+      "Furniture 3D modeling Services",
+      "Details 3D modeling Services",
+    ],
+    "CAD Drafting Service": [
+      "Architectural Design AutoCAD Drafting Services",
+      "Electrical Design AutoCAD Drafting Services",
+      "Structural Design AutoCAD Drafting Services",
+      "Sanitary Design AutoCAD Drafting Services",
+      "Interior Design AutoCAD Drafting Services",
+      "Landscape Design AutoCAD Drafting Services",
+      "As built Design AutoCAD Drafting Services",
+      "Furniture Design AutoCAD Drafting Services",
+      "Details AutoCAD Drafting Services",
+    ],
   };
 
   const handleOrderChange = (e) => {
@@ -28,14 +44,12 @@ const OrderPage = () => {
     setOrderForm({ ...orderForm, [name]: value });
   };
 
-  const handleServiceChange = (e) => {
+  const handleServiceCheckboxChange = (e) => {
     const { value, checked } = e.target;
-    let updatedServices = [...orderForm.services];
-    if (checked) {
-      updatedServices.push(value);
-    } else {
-      updatedServices = updatedServices.filter((service) => service !== value);
-    }
+    const updatedServices = checked
+      ? [...orderForm.services, value]
+      : orderForm.services.filter(service => service !== value);
+    
     setOrderForm({ ...orderForm, services: updatedServices });
   };
 
@@ -51,17 +65,16 @@ const OrderPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Phone Request Submitted:", phoneRequestForm);
     console.log("Order Submitted:", orderForm);
   };
 
   return (
     <div className="order-page">
-      <h1>Architectural Design CAD Drafting Works</h1>
+      <h1>ORDER PAGE</h1>
       <p>Fill the forms and order us. Let us do your drafting works!</p>
 
       <section className="order-form">
-        <h3>ORDER PAGE</h3>
+      
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label>Your Name:</label>
@@ -112,52 +125,58 @@ const OrderPage = () => {
               <option value="As Built">As Built</option>
             </select>
           </div>
+
           <div className="form-group">
-            <label>Services You Need:</label>
-            <div className="checkbox-group">
-              <label>
-                <input
-                  type="checkbox"
-                  value="CAD Drafting Service"
-                  onChange={handleServiceChange}
-                />{" "}
-                CAD Drafting Service
-              </label>
-              <label>
-                <input
-                  type="checkbox"
-                  value="3D Modeling"
-                  onChange={handleServiceChange}
-                />{" "}
-                3D Modeling
-              </label>
-            </div>
+            <label>Main Service:</label>
+            <select
+              name="mainService"
+              value={orderForm.mainService}
+              onChange={handleOrderChange}
+            >
+              <option value="">Select a main service</option>
+              <option value="3D Modeling">3D Modeling</option>
+              <option value="CAD Drafting Service">CAD Drafting Service</option>
+            </select>
           </div>
+
+          {orderForm.mainService && (
+            <div className="form-group">
+              <label>Services You Need:</label>
+              {availableServices[orderForm.mainService].map((service) => (
+                <div key={service}>
+                  <input
+                    type="checkbox"
+                    id={service}
+                    value={service}
+                    checked={orderForm.services.includes(service)}
+                    onChange={handleServiceCheckboxChange}
+                  />
+                  <label htmlFor={service}>{service}</label>
+                </div>
+              ))}
+            </div>
+          )}
+
           <div className="form-group">
-  <label>Tell us what's on your mind:</label>
-  <textarea
-    name="message"
-    value={orderForm.message}
-    onChange={handleOrderChange}
-    rows="5"
-    placeholder="Your message..."
-  />
-</div>
-
-
+            <label>Tell us what's on your mind:</label>
+            <textarea
+              name="message"
+              value={orderForm.message}
+              onChange={handleOrderChange}
+              rows="5"
+              placeholder="Your message..."
+            />
+          </div>
 
           <div className="file-upload">
             <label>Upload Your Documents:</label>
             {orderForm.files.map((file, index) => (
               <div key={index} className="file-input-group">
-                <input
-                  type="file"
-                  onChange={(e) => handleFileChange(index, e)}
-                />
+                <input type="file" onChange={(e) => handleFileChange(index, e)} />
               </div>
             ))}
             <button type="button" onClick={addNewFileInput} className="add-file-btn">
-              Add +
+              Add File
             </button>
           </div>
 
@@ -168,12 +187,18 @@ const OrderPage = () => {
 
         <section className="social-media-links">
           <h4>Send your files through our social media platform:</h4>
-          <button className="social-btn">Telegram</button>
-          <button className="social-btn">WhatsApp</button>
+          <button className="social-btn">
+            <FontAwesomeIcon icon={faTelegram} /> Telegram
+          </button>
+          <button className="social-btn">
+            <FontAwesomeIcon icon={faWhatsapp} /> WhatsApp
+          </button>
         </section>
 
         <h4>Thank you for choosing us. We will call you for further details.</h4>
-        <button className="call-now-btn">CALL US NOW</button>
+        <button className="call-now-btn">
+          <FontAwesomeIcon icon={faPhone} /> CALL US NOW
+        </button>
       </section>
     </div>
   );

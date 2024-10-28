@@ -1,0 +1,89 @@
+.three-d-modeling-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 100px;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #2c3e50; /* Adjust this color if needed */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #333; /* Ensure this is visible against the background */
+}
+
+
+.modeling-order-form {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.file-upload {
+    margin-bottom: 15px;
+}
+
+.file-input-group {
+    margin-bottom: 10px;
+}
+
+.add-file-btn {
+    background: #00415a;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-file-btn:hover {
+    background: #00415a;
+}
+
+.submit-btn {
+    background: #00415a;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 20px auto; /* Centering with margin auto */
+    border-radius: 4px;
+    cursor: pointer;
+    display: block; /* Ensures the button is treated as a block element */
+    width: 50%; /* Adjust as needed */
+}
+
+
+.submit-btn:hover {
+    background: #219653;
+}

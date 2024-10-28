@@ -14,6 +14,9 @@ import Signup from "./components/Signup";  // New import for Signup
 import Caddrafting from "./components/Caddrafting";
 import Packages from "./components/Packages"; 
 import WorkProcess from "./components/WorkProcess";
+import AutoCADDraftingServices from './components/AutoCADDraftingServices';
+import ThreeDModelingPage from "./components/ThreeDModelingPage";  // New import for 3D Modeling Page
+
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
@@ -59,6 +62,11 @@ const App = () => {
           {/* Route for Signup page */}
           <Route path="/signup" element={<Signup />} />
           <Route path="/caddrafting" element={<Caddrafting />} />
+
+          <Route path="/3dmodeling" element={<ThreeDModelingPage />} />
+
+          <Route path="/AutoCADDraftingServices" element={<AutoCADDraftingServices />} />
+
           
         </Routes>
       </div>

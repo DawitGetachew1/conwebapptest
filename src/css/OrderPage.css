@@ -47,6 +47,7 @@
     border: 1px solid #ddd;
     border-radius: 4px;
     transition: border-color 0.3s ease;
+    
   }
   
   input[type="text"]:focus,
@@ -106,35 +107,39 @@
   }
   
   .social-media-links {
-    text-align: center;
-    margin: 1rem 0;
-  }
+    display: flex;
+    justify-content: center; /* Centers the buttons horizontally */
+    gap: 15px; /* Adds space between the buttons */
+    margin-bottom: 20px; /* Adds space below the social media links */
+}
   
   .social-btn {
-    margin: 0 0.5rem;
-    background-color: #17a2b8;
-    color: white;
-    padding: 0.5rem 1rem;
+    background: none;
     border: none;
-    border-radius: 4px;
+    color: #3498db; /* Adjust this color as needed */
     cursor: pointer;
-  }
+    font-size: 18px; /* Size of the text and icon */
+    margin-right: 10px; /* Spacing between buttons */
+    display: flex;
+    align-items: center; /* Center align the icon and text */
+}
   
   .social-btn:hover {
-    background-color: #138496;
+    background-color: #28a0b21b;
   }
   
   .call-now-btn {
-    width: 100%;
-    background-color: #dc3545;
+    display: block;
+    margin: 0 auto; /* Centers the button */
+    background: #27ae60; /* Adjust as needed */
     color: white;
-    padding: 0.75rem;
     border: none;
+    padding: 10px;
     border-radius: 4px;
     cursor: pointer;
-  }
+}
   
-  .call-now-btn:hover {
-    background-color: #c82333;
-  }
+.call-now-btn:hover {
+  background: #219653; /* Adjust hover color as needed */
+}
   

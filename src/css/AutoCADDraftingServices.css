@@ -1,0 +1,207 @@
+/* Base styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #00415a;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    background-color: #00415a;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    height: 60vh;
+    text-align: left;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.hero-section h1,h3{
+    color: #ffffff;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://yourbackground.jpg') center center / cover;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+    color: #d1d1d1;
+}
+
+/* Services Section */
+.services-container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+}
+
+.services-container h2 {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.services-container p {
+    color: #606060;
+    line-height: 1.8;
+}
+
+/* Style for list-item SVG icon */
+.list-item svg {
+    width: 2rem; /* Adjust width */
+    height: 2rem; /* Adjust height */
+    color: #1a73e8; /* Icon color */
+    flex-shrink: 0;
+}
+
+
+
+
+.list-item span {
+    color: #333;
+    font-size: 0.95rem;
+}
+
+/* Contact Form */
+.form-container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.input-field {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #333;
+    transition: border 0.2s ease;
+}
+
+.input-field:focus {
+    border-color: #1a73e8;
+    outline: none;
+}
+
+.button-primary {
+    margin-top: 10px;
+ width: 10%; 
+  padding: 12px;
+  background-color: #00415a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-primary:hover {
+    background-color: #145dbd;
+}
+
+.button-secondary {
+    margin-left: 10px;
+  width: 30%;
+  padding: 15px !important;
+  background-color: #00415a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-secondary:hover {
+    background-color: #145dbd;
+}
+
+/* Sample Work Section */
+.work-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.work-card:hover {
+    transform: translateY(-4px);
+}
+
+.work-image {
+    background-color: #ddd;
+    height: 200px;
+}
+
+.work-card h3 {
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.work-card p {
+    font-size: 0.9rem;
+    color: #606060;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #ddd;
+    padding: 2rem 1rem;
+}
+
+footer h4 {
+    color: #ffffff;
+    font-size: 1.25rem;
+}
+
+footer p,
+footer ul li {
+    color: #aaa;
+}
+
+footer ul li a {
+    color: #ddd;
+    transition: color 0.2s;
+}
+
+footer ul li a:hover {
+    color: #ffffff;
+}
+
+footer .border-t {
+    border-color: #444;
+}
