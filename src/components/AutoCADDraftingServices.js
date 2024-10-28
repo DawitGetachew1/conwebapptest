@@ -111,26 +111,31 @@ const AutoCADDraftingServices = () => {
 
       {/* Sample Work Section */}
       <section className="bg-gray-50 py-20">
-        <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-12">Our Work Samples</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[1, 2, 3].map((item) => (
-              <div
-                key={item}
-                className="work-card"
-              >
-                <div className="work-image"></div>
-                <div className="p-6">
-                  <h3 className="font-semibold text-lg mb-2">Project {item}</h3>
-                  <p className="text-gray-600">
-                    Detailed AutoCAD drawing with precise measurements and specifications.
-                  </p>
-                </div>
-              </div>
-            ))}
+  <div className="container mx-auto px-6">
+    <h2 className="text-3xl font-bold text-center mb-12">Our Work Samples</h2>
+    <div className="grid md:grid-cols-3 gap-8">
+      {[1, 2, 3].map((item) => (
+        <div key={item} className="work-card flex flex-col items-center"> {/* Center items in card */}
+          <div className="w-full flex justify-center"> {/* Center image horizontally */}
+            <img 
+              src={`/img/project${item}.jpg`} 
+              alt={`Project ${item}`}
+              className="h-48 object-cover work-image" /* Remove w-full for central alignment */
+            />
+          </div>
+          <div className="p-6 text-center"> {/* Center-align text under image */}
+            <h3 className="font-semibold text-lg mb-2">Project {item}</h3>
+            <h2 className="text-gray-600">
+              Detailed AutoCAD drawing with precise measurements and specifications.
+            </h2>
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
+
+
 
       {/* Footer Section */}
       <footer className="bg-gray-900 text-white py-12">
@@ -145,18 +150,12 @@ const AutoCADDraftingServices = () => {
             <div>
               <h4 className="text-xl font-semibold mb-4">Contact</h4>
               <p className="text-gray-400">
-                Email: contact@tirusera.com<br />
-                Phone: +1 (555) 123-4567
+                Email: ethiooutsourcing@gmail.com<br />
+                Phone:  +251 978783334,<br />
+                Phone:  +251 0901571414<br />
               </p>
             </div>
-            <div>
-              <h4 className="text-xl font-semibold mb-4">Quick Links</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li><a href="#services" className="hover:text-white transition-colors">Services</a></li>
-                <li><a href="#portfolio" className="hover:text-white transition-colors">Portfolio</a></li>
-                <li><a href="#contact" className="hover:text-white transition-colors">Contact</a></li>
-              </ul>
-            </div>
+            
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
             <p>&copy; 2024 TiruSera. All rights reserved.</p>
