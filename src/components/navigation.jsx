@@ -61,7 +61,7 @@ export const Navigation = (props) => {
               </Link>
             </li>
             <li>
-              <Link to="AutoCADDraftingServices" className="page-scroll">
+              <Link to="/AutoCADDraftingServices" className="page-scroll">
                 CAD Drafting
               </Link>
             </li>
