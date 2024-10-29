@@ -48,6 +48,7 @@ const WorkProcess = () => {
   ];
 
   return (
+    <div className="min-h-screen">
     <div className="roadmap-container">
       <div className="title">
         <h1>HOW WE WORK</h1>
@@ -84,6 +85,37 @@ const WorkProcess = () => {
           <a href="tel:+1234567890">+ (251)  0978783334 </a>
         </div>
       </div>
+    </div>
+
+{/* Footer Section */}
+<footer className="bg-gray-900 text-white py-12">
+        <div className="container mx-auto px-6">
+          <div className="grid md:grid-cols-3 gap-8">
+            <div>
+              <h4 className="text-xl font-semibold mb-4">TiruSera</h4>
+              <p className="text-gray-400">
+                Professional 3D modeling services for all your design needs.
+              </p>
+            </div>
+            <div>
+              <h4 className="text-xl font-semibold mb-4">Contact</h4>
+              <p className="text-gray-400">
+                Email: ethiooutsourcing@gmail.com<br />
+                Phone: +251 978783334,<br />
+                Phone: +251 0901571414<br />
+              </p>
+            </div>
+          </div>
+          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+            <p>&copy; 2024 TiruSera. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+
+
+
+
+
     </div>
   );
 };

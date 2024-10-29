@@ -1,145 +1,164 @@
-/* OrderPage.css */
-.order-page {
-    max-width: 800px;
+.order-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 220vh;
+  background-color: #f4f7fa;
+  flex-direction: column;
+  min-height: 100vh;
+  
+}
+
+.order-box {
+  background-color: #fff;
+  /* padding: 40px; */
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  width: 800px;
+  text-align: center;
+  /* margin-top: 50px; */
+  /* max-width: 800px; */
     margin: 0 auto;
     padding: 2rem;
-    font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    margin-top: 10rem;
-  }
-  
-  h1, h3, h4 {
-    text-align: center;
-    color: #333;
-  }
-  
-  p {
-    text-align: center;
-    margin: 1rem 0;
-    color: #fff;
-  }
-  
-  .order-form {
-    margin-top: 2rem;
-  }
-  
-  .form-group label {
-    display: block; /* Ensures the label is on a new line */
-    margin-bottom: 0.5rem; /* Optional: add spacing below the label */
-  }
-  
-  
-  label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-  }
-  
-  input[type="text"],
-  input[type="tel"],
-  input[type="email"],
-  select,
-  textarea {
-    width: 100%;
-    padding: 0.5rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    transition: border-color 0.3s ease;
-    
-  }
-  
-  input[type="text"]:focus,
-  input[type="tel"]:focus,
-  input[type="email"]:focus,
-  select:focus,
-  textarea:focus {
-    border-color: #007bff;
-  }
-  
-  .checkbox-group {
-    display: block;
-    margin-top: 0.5rem;
-  }
-  
-  .checkbox-group label {
-    
-    margin-bottom: 0.25rem;
-  }
-  
-  .file-upload {
-    margin: 1rem 0;
-  }
-  
-  .file-input-group {
-    margin-bottom: 0.5rem;
-  }
-  
-  .add-file-btn {
-    background-color: #28a745;
-    color: white;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 0.5rem;
-  }
-  
-  .add-file-btn:hover {
-    background-color: #218838;
-  }
-  
-  .submit-btn {
-    width: 50%;
-    background-color: #007bff;
-    color: white;
-    padding: 0.75rem;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-left: 20rem;
-    
-  }
-  
-  .submit-btn:hover {
-    background-color: #0056b3;
-  }
-  
-  .social-media-links {
-    display: flex;
-    justify-content: center; /* Centers the buttons horizontally */
-    gap: 15px; /* Adds space between the buttons */
-    margin-bottom: 20px; /* Adds space below the social media links */
+    padding-top: 50rem !important;
+    flex: 1;
 }
-  
-  .social-btn {
-    background: none;
-    border: none;
-    color: #3498db; /* Adjust this color as needed */
-    cursor: pointer;
-    font-size: 18px; /* Size of the text and icon */
-    margin-right: 10px; /* Spacing between buttons */
-    display: flex;
-    align-items: center; /* Center align the icon and text */
+
+.order-box h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
 }
-  
-  .social-btn:hover {
-    background-color: #28a0b21b;
-  }
-  
-  .call-now-btn {
-    display: block;
-    margin: 0 auto; /* Centers the button */
-    background: #27ae60; /* Adjust as needed */
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 4px;
-    cursor: pointer;
+
+.order-box p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 30px;
 }
-  
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+  /* margin-top: 100px; */
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group input[type="email"],
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #5ca9fb;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+.file-upload {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.file-input-group {
+  margin-top: 10px;
+}
+
+.add-file-btn {
+  width: 20%;
+  margin-top: 10px;
+  padding: 12px;
+  background-color: #00415a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-file-btn:hover {
+  background-color: #00415a;
+}
+
+.submit-btn{
+  width: 100%;
+  padding: 12px;
+  background-color: #00415a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.social-btn,
+.call-now-btn {
+  width: 20%;
+  padding: 6px;
+  background-color: #00415a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+
+
+.submit-btn:hover,
+.social-btn:hover,
 .call-now-btn:hover {
-  background: #219653; /* Adjust hover color as needed */
+  background-color: #00415a;
 }
-  
+
+.social-media-links {
+  margin-top: 20px;
+}
+
+.social-media-links h4 {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.footer {
+  width: 100%;
+  background-color: #00415a; /* Background color for the footer */
+  text-align: center; /* Center the text */
+  padding: 10px; /* Some padding for aesthetics */
+  position: relative; /* Positioning for footer */
+}
+
+.footer-links a {
+  margin: 0 10px; /* Space out the links */
+  text-decoration: none; /* Remove underline */
+  color: #007BFF; /* Link color */
+}
+
+.footer-links a:hover {
+  text-decoration: underline; /* Underline on hover */
+}

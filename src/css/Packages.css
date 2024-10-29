@@ -20,6 +20,50 @@
     gap: 20px;
     justify-content: center;
   }
+  .pricing-details p{
+
+    font-size: large !important;
+
+  }
+  .order-info p{
+
+    font-size: large !important;
+  }
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: #ddd;
+  padding: 2rem 1rem;
+  width: 100%;
+}
+
+footer h4 {
+  color: #ffffff;
+  font-size: 1.25rem;
+}
+
+footer p,
+footer ul li {
+  color: #aaa;
+}
+
+footer ul li a {
+  color: #ddd;
+  transition: color 0.2s;
+}
+
+footer ul li a:hover {
+  color: #ffffff;
+}
+
+footer .border-t {
+  border-color: #444;
+}
+
+
+
+
   
   @media (min-width: 768px) {
     .packages {

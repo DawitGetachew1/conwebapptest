@@ -193,9 +193,11 @@ body {
 
 /* Footer */
 footer {
-    background-color: #222;
+    background-color: #002b3c;
     color: #ddd;
     padding: 2rem 1rem;
+    text-align: center;
+    border-radius: 5px 5px 0px 0px;
 }
 
 footer h4 {
