@@ -64,7 +64,7 @@ const App = () => {
           <Route path="/signup" element={<Signup />} />
           <Route path="/caddrafting" element={<Caddrafting />} />
 
-          <Route path="/3dmodeling" element={<ThreeDModelingPage />} />
+          <Route path="/ThreeDModelingPage" element={<ThreeDModelingPage />} />
 
           <Route path="/AutoCADDraftingServices" element={<AutoCADDraftingServices />} />
 
