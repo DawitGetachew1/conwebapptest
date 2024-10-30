@@ -92,13 +92,13 @@ const AutoCADDraftingServices = () => {
                 <div className="flex space-x-4">
                   <button
                     type="submit"
-                    className="button-primary flex-1 text-white py-3 px-6 rounded-lg"
+                    className="btn-newcustom"
                   >
                     Submit
                   </button>
                   <a
                     href="tel:+YOUR_PHONE_NUMBER"
-                    className="button-secondary flex-1 text-white py-3 px-6 rounded-lg text-center"
+                    className="btn-newcustom"
                   >
                     Call Us Now
                   </a>

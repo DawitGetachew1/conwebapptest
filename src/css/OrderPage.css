@@ -22,6 +22,7 @@
     padding: 2rem;
     padding-top: 50rem !important;
     flex: 1;
+    
 }
 
 .order-box h1 {
@@ -161,4 +162,45 @@ textarea {
 
 .footer-links a:hover {
   text-decoration: underline; /* Underline on hover */
+}
+@media (max-width: 768px) {
+
+
+  /* order page */
+
+  .order-box {
+    padding: 20px;
+    width: 100%;
+  }
+  .form-group {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  select,
+  textarea {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .submit-btn,
+  .add-file-btn,
+  .call-now-btn,
+  .social-btn {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .social-media-links {
+    flex-direction: column;
+  }
+
+
+
+
+
+
 }

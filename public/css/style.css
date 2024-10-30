@@ -629,8 +629,546 @@ label {
   background-color: #6372ff;
 }
 
+.btn-newcustom {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #00415a;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.4s ease;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+/* Hover and Focus Effects */
+.btn-newcustom:hover,
+.btn-newcustom:focus {
+  background-color: #5ca9fb;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Active Button State */
+.btn-newcustom:active {
+  background-color: #6372ff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transform: translateY(1px);
+}
+
+
+
+
+/* addfiles */
+
+/* Base styles */
+
+
+
+.packages-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.package-card {
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s ease;
+  width: 100%;
+}
+
+.package-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.package-card h4 {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+/* Pricing details and order info styles */
+.pricing-details, .order-info {
+  margin-top: 30px;
+}
+
+.pricing-details h2, .order-info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Footer styles */
+
+
+/* Mobile Styles */
+
+
+
+
+
+/* added file end order */
+
+.order-page-container {
+  padding: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.order-box {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  
+  
+}
+
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: none;
+}
+
+.file-upload {
+  margin: 15px 0;
+}
+
+.file-input-group {
+  margin-bottom: 10px;
+}
+
+.add-file-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-file-btn:hover {
+  background-color: #45a049;
+}
+
+.submit-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.social-media-links {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.social-btn {
+  background-color: #25D366; /* WhatsApp Color */
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.social-btn:hover {
+  background-color: #1DAA47; /* WhatsApp Hover Color */
+}
+
+/* Call now button styles */
+.call-now-btn {
+  background-color: #f44336; /* Red Color */
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.call-now-btn:hover {
+  background-color: #d32f2f; /* Darker Red Hover */
+}
+
+
+
+
+
+
+
+
+
+/* added file end order */
+
+
+/* Mobile View Adjustments */
 @media (max-width: 768px) {
-  #about img {
-    margin: 50px 0;
+
+
+  /* order page */
+
+  .order-box {
+    padding: 20px;
+    width: 100%;
   }
+
+  .form-group {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  select,
+  textarea {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .submit-btn,
+  .add-file-btn,
+  .call-now-btn,
+  .social-btn {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .social-media-links {
+    flex-direction: column;
+  }
+
+
+
+
+
+
+
+
+
+
+
+/* order page */
+
+
+  
+  .packages-container {
+    padding: 10px;
+    
+    
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .package-card {
+    padding: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  .package-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .package-card h4 {
+    font-size: 1rem;
+  }
+
+  .pricing-details h2, .order-info h2 {
+    font-size: 1.3rem;
+  }
+
+  .order-info p, .pricing-details p {
+    font-size: 0.9rem;
+  }
+
+  .pricing-details{
+    width: 200px;
+  }
+
+  .order-info{
+    width: 200px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+  
+  /* General */
+  body,
+  html {
+    font-size: 14px;
+  }
+  
+  /* Headings */
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+
+  /* Paragraphs */
+  p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  
+  /* Navbar */
+  #menu a.navbar-brand {
+    margin-left: 0 !important;
+    font-size: 20px;
+  }
+  #menu.navbar-default .navbar-nav > li > a {
+    font-size: 12px;
+    margin: 9px 10px 0;
+  }
+
+  /* Header Section */
+  header .intro-text {
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+  .intro h1 {
+    font-size: 48px;
+  }
+  .intro p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  /* About Section */
+  #about {
+    padding: 50px 0;
+  }
+  #about img {
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+  /* Features Section */
+  #features i.fa {
+    width: 70px;
+    height: 70px;
+    font-size: 28px;
+    padding: 20px 0;
+  }
+
+  /* Services Section */
+  #services {
+    padding: 50px 0;
+  }
+  #services h2 {
+    font-size: 24px;
+  }
+  #services .service-desc {
+    margin-bottom: 20px;
+  }
+  #services i.fa {
+    width: 90px;
+    height: 90px;
+    font-size: 30px;
+    padding: 20px 0;
+  }
+
+  /* Portfolio Section */
+  #portfolio {
+    padding: 50px 0;
+  }
+
+  /* Testimonials Section */
+  #testimonials {
+    padding: 50px 0;
+  }
+  #testimonials .testimonial-content p {
+    font-size: 13px;
+  }
+
+  /* Team Section */
+  #team {
+    padding: 50px 0;
+  }
+  #team .team-img {
+    width: 180px;
+  }
+
+  /* Contact Section */
+  #contact {
+    padding: 50px 0;
+  }
+  #contact h3 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  #contact .form-control {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+  #contact .contact-item span {
+    font-size: 14px;
+  }
+
+  /* Footer Section */
+  #footer {
+    padding: 20px 0;
+  }
+  #footer p {
+    font-size: 12px;
+  }
+
+  /* Custom Buttons */
+  .btn-custom,
+  .btn-mycustom {
+    padding: 10px 24px;
+    font-size: 14px;
+  }
+
+
+  .btn-custom  {
+    width: 100%; /* Full width on mobile */
+    margin: 10px 0;
+}
+
+.btn-newcustom {
+  padding: 10px 20px; /* Adjust padding */
+  font-size: 14px;    /* Smaller font size */
+  width: 100%;        /* Full-width button */
+}
+  
+}
+
+@media (max-width: 480px) {
+
+/* orderpage */
+
+h1 {
+  font-size: 1.3rem;
+}
+
+p {
+  font-size: 0.8rem;
+}
+
+.form-group {
+  margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select,
+textarea {
+  padding: 6px;
+  font-size: 0.85rem;
+}
+
+.submit-btn,
+.add-file-btn,
+.call-now-btn,
+.social-btn {
+  padding: 6px;
+  font-size: 0.85rem;
+}
+
+.order-page-container {
+  padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/* order page */
+
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .package-card {
+    padding: 10px;
+    width: 300;
+  }
+
+  .package-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .package-card h4 {
+    font-size: 0.9rem;
+  }
+
+  .pricing-details h2, .order-info h2 {
+    font-size: 1.2rem;
+  }
+
+  .order-info p, .pricing-details p {
+    font-size: 0.8rem;
+  }
+
+  
 }
