@@ -88,29 +88,69 @@ const WorkProcess = () => {
     </div>
 
 {/* Footer Section */}
-<footer className="bg-gray-900 text-white py-12">
-        <div className="container mx-auto px-6">
-          <div className="grid md:grid-cols-3 gap-8">
-            <div>
-              <h4 className="text-xl font-semibold mb-4">TiruSera</h4>
-              <p className="text-gray-400">
-                Professional 3D modeling services for all your design needs.
-              </p>
+<footer id="footer">
+  <div className="container">
+    <div className="row">
+      {/* Column 1: Company Info */}
+      <div className="col-md-4">
+        <div className="footer-brand">
+          <img src="/image/logo.png" alt="Company Logo" className="footer-logo" />
+          <h4>TiruSera</h4>
+          <p>
+            Professional 3D modeling services for all your design needs.
+          </p>
+          <a href="/about" className="read-more">…Read more</a>
+        </div>
+      </div>
+
+      {/* Column 2: Services */}
+      <div className="col-md-4">
+        <div className="footer-section">
+          <h4>Services</h4>
+          <ul className="footer-links">
+            <li>Architectural</li>
+            <li>Electrical</li>
+            <li>Mechanical</li>
+            <li>Plumbing</li>
+          </ul>
+          <a href="/services" className="read-more">…Read Services</a>
+        </div>
+      </div>
+
+      {/* Column 3: Contact Info */}
+      <div className="col-md-4">
+      <div className="footer-section">
+          
+          <div className="contact-info">
+          <h4>Contact Us</h4>
+      <ul className="contact-links">
+        <li><i className="fa fa-envelope"></i> ethiooutsourcing@gmail.com</li>
+        <li><a href="#"><i className="fa fa-phone"></i> +251 978783334</a></li>
+        <li><a href="#"><i className="fa fa-phone"></i>+251 0901571414</a></li>
+      </ul>
+            <div className="social-links">
+              <a href="#" className="social-icon"><i className="fa fa-facebook"></i></a>
+              <a href="#" className="social-icon"><i className="fa fa-twitter"></i></a>
+              <a href="#" className="social-icon"><i className="fa fa-youtube"></i></a>
             </div>
-            <div>
-              <h4 className="text-xl font-semibold mb-4">Contact</h4>
-              <p className="text-gray-400">
-                Email: ethiooutsourcing@gmail.com<br />
-                Phone: +251 978783334,<br />
-                Phone: +251 0901571414<br />
-              </p>
-            </div>
-          </div>
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 TiruSera. All rights reserved.</p>
           </div>
         </div>
-      </footer>
+      </div>
+    </div>
+
+    {/* Copyright Bar */}
+    <div className="footer-bottom">
+      <div className="row">
+        <div className="col-md-6">
+          <p>© 2024 TiruSera - All Rights Reserved</p>
+        </div>
+        <div className="col-md-6 text-right">
+          <p>Designed and Developed by Surepoint Tech</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
 
 
 

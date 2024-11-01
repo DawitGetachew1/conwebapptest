@@ -20,9 +20,9 @@
   /* max-width: 800px; */
     margin: 0 auto;
     padding: 2rem;
-    padding-top: 35rem !important;
+    padding-top: 55rem !important;
     flex: 1;
-    width: 800px;
+   
     
 }
 
@@ -147,23 +147,7 @@ textarea {
   margin-bottom: 10px;
 }
 
-.footer {
-  width: 100%;
-  background-color: #00415a; /* Background color for the footer */
-  text-align: center; /* Center the text */
-  padding: 10px; /* Some padding for aesthetics */
-  position: relative; /* Positioning for footer */
-}
-
-.footer-links a {
-  margin: 0 10px; /* Space out the links */
-  text-decoration: none; /* Remove underline */
-  color: #007BFF; /* Link color */
-}
-
-.footer-links a:hover {
-  text-decoration: underline; /* Underline on hover */
-}
+/*  */
 @media (max-width: 768px) {
 
 

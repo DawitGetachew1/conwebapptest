@@ -3,7 +3,7 @@ import { HashRouter as Router, Route, Routes, useLocation } from "react-router-d
 import { Navigation } from "./components/navigation";
 import { Header } from "./components/header";
 import { Features } from "./components/features";
-import { About } from "./components/about";
+// import { About } from "./components/about";
 import { Services } from "./components/services";
 import { Gallery } from "./components/gallery";
 import { Testimonials } from "./components/testimonials";
@@ -17,6 +17,7 @@ import WorkProcess from "./components/WorkProcess";
 import Dashboard from './components/Dashboard/Dashboard';
 import AutoCADDraftingServices from './components/AutoCADDraftingServices';
 import ThreeDModelingPage from "./components/ThreeDModelingPage";
+import About from "./components/About";
 
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
@@ -47,15 +48,16 @@ const AppContent = () => {
             <>
               <Header data={landingPageData.Header} />
               <Features data={landingPageData.Features} />
-              <About data={landingPageData.About} />
+              {/* <About data={landingPageData.About} /> */}
               <Services data={landingPageData.Services} />
               <Gallery data={landingPageData.Gallery} />
               <Testimonials data={landingPageData.Testimonials} />
-              <Team data={landingPageData.Team} />
+              {/* <Team data={landingPageData.Team} /> */}
               <Contact data={landingPageData.Contact} />
             </>
           } 
         />
+        <Route path="/about" element={<About />} />
         <Route path="/packages" element={<Packages />} />
         <Route path="/workprocess" element={<WorkProcess />} />
         <Route path="/login" element={<Login />} />

@@ -263,7 +263,7 @@ header .intro-text {
 }
 /* About Section */
 #about {
-  padding: 100px 0;
+  padding: 400px 0;
 }
 #about h3 {
   font-size: 22px;
@@ -308,6 +308,14 @@ header .intro-text {
   line-height: 24px;
   margin: 30px 0;
 }
+
+.about-page{
+  padding-top: 100px;
+}
+.about-hero {
+  text-align: center; /* This will center the text inside the about-hero div */
+}
+
 /* Services Section */
 #services {
   padding: 100px 0;
@@ -587,21 +595,106 @@ label {
   color: #608dfd;
   background: #fff;
 }
-/* Footer Section*/
+
+
+
+
+
+
+/* Footer Section */
 #footer {
-  background: #f6f6f6;
-  padding: 30px 0;
+  background-color: #14212b;
+  color: #ffffff;
+  padding: 60px 0 20px;
 }
-#footer p {
-  color: #888;
-  font-size: 14px;
+
+.footer-logo {
+  width: 120px;
+  margin-bottom: 20px;
 }
-#footer a {
-  color: #608dfd;
+
+.footer-brand p {
+  color: #ffffff;
+  margin-bottom: 20px;
+  line-height: 1.6;
 }
-#footer a:hover {
-  border-bottom: 2px solid #608dfd;
+
+.social-links {
+  margin-top: 20px;
 }
+
+.social-links a {
+  color: #ffffff;
+  margin-right: 15px;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #00ff9d;
+}
+
+.footer-section h4 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.footer-links, .contact-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li, .contact-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a, .contact-links a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover, .contact-links a:hover {
+  color: #fff;
+}
+
+.contact-links i {
+  margin-right: 10px;
+  color: #fff;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: #ffffff;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* @media (max-width: 768px) {
+  .footer-section {
+    margin-bottom: 30px;
+  }
+  
+  .text-right {
+    text-align: left;
+    margin-top: 10px;
+  }
+} */
+
+
+
+
+
+
 
 .btn-mycustom {
   font-family: "Raleway", sans-serif;
@@ -838,8 +931,266 @@ textarea {
 }
 
 
+.language-toggle {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  padding-top: 12px;
+}
+
+.language-switch {
+  display: none;
+}
+
+.language-switch-label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 68px;
+  height: 27px;
+  background: #eeeeee;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+
+.language-switch-label:after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 21px;
+  height: 21px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.language-switch:checked + .language-switch-label {
+  background: #3498db;
+}
+
+.language-switch:checked + .language-switch-label:after {
+  left: calc(100% - 3px);
+  transform: translateX(-100%);
+}
+
+.language-switch-label:active:after {
+  width: 28px;
+}
+
+.language-switch-label span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+  font-weight: bold;
+  color: #333;
+  text-indent: 0;
+  white-space: nowrap;
+}
 
 
+
+.payment-process-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.payment-process-container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  margin-top: 10rem;
+}
+
+.payment-methods {
+  margin: 2rem 0;
+}
+
+.payment-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.payment-option {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.payment-steps {
+  margin: 2rem 0;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid #eee;
+  border-radius: 8px;
+}
+
+.payment-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.proceed-btn {
+  background-color: #0066ff;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background-color: #ff3333;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.payment-support {
+  margin: 2rem 0;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+
+
+
+/* comfirm payment  */
+
+.payment-confirmation-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.payment-confirmation-container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 10rem;
+}
+
+
+
+.order-summary {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+}
+
+
+
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #444;
+}
+
+
+.payment-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+
+.security-note {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #e9ecef;
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 1.5rem 0;
+  color: #666;
+}
+
+.security-note svg {
+  color: #28a745;
+}
+
+.payment-support {
+  border-top: 1px solid #ddd;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.payment-support h3 {
+  color: #444;
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.payment-support p {
+  margin: 0.3rem 0;
+  color: #666;
+}
+
+
+
+.navbar-brand {
+  padding: 5px 15px; /* Adjust padding to fit your logo */
+}
+
+.navbar-logo {
+  height: 100px; /* Adjust height as needed */
+  width: auto;
+  object-fit: contain;
+}
+
+/* Optional: Add styles for different screen sizes */
 
 
 
@@ -851,7 +1202,31 @@ textarea {
 /* Mobile View Adjustments */
 @media (max-width: 768px) {
 
+  .navbar-logo {
+    height: 30px; /* Smaller logo for mobile devices */
+  }
+  .payment-confirmation-container {
+    width: 95%;
+    padding: 1.5rem;
+  }
 
+  .payment-actions {
+    flex-direction: column;
+  }
+
+  .confirm-btn,
+  .cancel-btn {
+    width: 100%;
+  }
+
+
+
+
+  .language-toggle {
+    margin: 10px 15px;
+  }
+
+  
   /* order page */
 
   .order-box {
@@ -997,13 +1372,116 @@ textarea {
   }
 
   /* About Section */
-  #about {
+  /* #about {
     padding: 50px 0;
   }
   #about img {
     width: 100%;
     margin: 20px 0;
-  }
+  } */
+
+
+  /* src/styles/About.css */
+.about-page {
+  padding-top: 60px;
+}
+
+.about-hero {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.about-hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #333;
+}
+
+.about-text {
+  margin: 30px 0;
+}
+
+.about-text h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 25px 0 15px;
+  color: #333;
+}
+
+.mission {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.section p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+}
+
+.services-section {
+  margin-top: 60px;
+  padding: 40px 0;
+  background-color: #f8f9fa;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.service-category {
+  flex: 1;
+  min-width: 300px;
+}
+
+.service-category h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.service-category ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.service-category li {
+  margin-bottom: 12px;
+  padding-left: 20px;
+  position: relative;
+  color: #555;
+}
+
+.service-category li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #007bff;
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+
+
+
+
   
   /* Features Section */
   #features i.fa {
@@ -1074,6 +1552,18 @@ textarea {
   #footer p {
     font-size: 12px;
   }
+  .footer-section {
+    margin-bottom: 30px;
+  }
+  
+  .text-right {
+    text-align: left;
+    margin-top: 10px;
+  }
+  
+  .col-md-4 {
+    margin-bottom: 30px;
+  }
 
   /* Custom Buttons */
   .btn-custom,
@@ -1097,6 +1587,31 @@ textarea {
 }
 
 @media (max-width: 480px) {
+/* about us */
+.about-hero {
+  padding: 40px 0;
+  margin-bottom: 40px;
+}
+
+.about-hero h1 {
+  font-size: 36px;
+}
+
+.services-container {
+  flex-direction: column;
+  gap: 30px;
+}
+
+.service-category {
+  min-width: 100%;
+}
+
+.mission {
+  font-size: 16px;
+}
+
+
+
 
 /* orderpage */
 
@@ -1172,3 +1687,5 @@ textarea {
 
   
 }
+
+

@@ -2,7 +2,7 @@
 
 /* Sidebar text and icon styles */
 .dashboard-menu-item {
-    font-size: 1.2rem; /* Larger text */
+    font-size: 3rem; /* Larger text */
   }
   
   .dashboard-menu-item-icon {
@@ -11,51 +11,51 @@
   
   /* AppBar elements */
   .app-bar-title {
-    font-size: 1.6rem;
+    font-size: 3rem;
     font-weight: bold;
   }
   
   .search-input {
-    font-size: 1rem;
+    font-size: 3rem;
   }
   
   .icon-buttons {
-    font-size: 1.8rem; /* Larger icon size for AppBar icons */
+    font-size: 3rem; /* Larger icon size for AppBar icons */
   }
   
   /* Main content adjustments */
   .product-title {
-    font-size: 1.4rem;
+    font-size: 5rem;
   }
   
   .table-head {
-    font-size: 1.2rem;
+    font-size: 3rem;
     font-weight: 500;
   }
   
   .table-cell {
-    font-size: 1.1rem;
+    font-size: 3rem;
   }
   /* src/components/Dashboard/Dashboard.css */
 
 .dashboard-title {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 3rem;
   color: #1a2233;
 }
 
 .drawer-title {
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 
 .list-item-text {
-  font-size: 1rem;
+  font-size: 3rem;
 }
 
 .order-status {
   font-weight: 500;
-  font-size: 0.875rem;
+  font-size: 25rem;
 }
